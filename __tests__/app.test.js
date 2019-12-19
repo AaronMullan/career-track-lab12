@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+
 const request = require('supertest');
 const app = require('../lib/app');
 const connect = require('../lib/utils/connect');
@@ -44,7 +45,6 @@ describe('players routes', () => {
       .then(res => {
         expect(res.body).toEqual({
           _id: expect.any(String),
-          budget: 1,
           playerName: 'Alex Ovechkin',
           team: 'Washington Capitals',
           position: 'Wight Ring',
