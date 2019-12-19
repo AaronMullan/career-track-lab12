@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const csv = require('csvtojson');
 
-mongoose.connect('mongodb://localhost:27017/hockeyplayers', {
+mongoose.connect('mongodb://localhost:27017/players', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
